@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Add Employee</title>
     <link rel="stylesheet" href="../css/addEmployeePayroll.css">
 </head>
+
 <body>
+    <!-- page header -->
     <header class="header-content header">
         <div class="logo-content">
             <img src="../assets/images/logo.png" alt="logo">
@@ -19,14 +22,42 @@
     </header>
     <div class="form-content">
         <form action="#" class="form" onsubmit="save();return false">
-        <div class="form-head">Employee Payroll form</div>
-        <div class="row-content">
-            <label for="name" class="label text">Name</label>
-            <input type="text" class="input" id="name" name="name" placeholder="Your name.." required>
-        </div>
-    </form>
+            
+            <!-- form header -->
+            <div class="form-head">Employee Payroll form</div>
+
+            <!-- name input field -->
+            <div class="row-content">
+                <label for="name" class="label text">Name</label>
+                <input type="text" class="input" id="name" name="name" placeholder="Your name.." required>
+            </div>
+
+            <!-- profile input field -->
+            <div class="row-content">
+                <label class="label text" for="profile">Profile image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" value="../assets/profile-images/Ellipse -3.png">
+                        <img class="profile" id="image1" src="../assets/profile-images/Ellipse -3.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile2" value="../assets/profile-images/Ellipse -1.png">
+                        <img class="profile" id="image2" src="../assets/profile-images/Ellipse -1.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profil3" value="../assets/profile-images/Ellipse -8.png">
+                        <img class="profile" id="image3" src="../assets/profile-images/Ellipse -8.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile4" value="../assets/profile-images/Ellipse -7.png">
+                        <img class="profile" id="image4" src="../assets/profile-images/Ellipse -7.png">
+                    </label>
+                </div>
+            </div>
+        </form>
     </div>
 
     <script defer src="../js/addEmployeePayroll.js"></script>
 </body>
+
 </html>
