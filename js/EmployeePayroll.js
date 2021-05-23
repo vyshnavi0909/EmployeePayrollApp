@@ -12,7 +12,7 @@ class EmployeePayroll {
         return this._name;
     }
     set name(name) {
-        const nameRegex = RegExp("^[A-Z]{1}[a-zA-Z\\s]{2,}$");
+        const nameRegex = RegExp("^[A-Z]{1}[a-z]{2,}$");
         if(nameRegex.test(name)){
             this._name = name;
         }else {
